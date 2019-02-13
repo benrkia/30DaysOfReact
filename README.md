@@ -1,4 +1,4 @@
-# I've joined the #300DaysOfReact Challenge
+# I've joined the #30DaysOfReact Challenge
 
 `30 days of react`: is a challenge that aims at learning react by allocating at least 1h every day, to learn and practice react, for the next 30 days.
 \
