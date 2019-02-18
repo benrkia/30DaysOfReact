@@ -49,3 +49,16 @@ Usin props in order to share data between components, props are immutable object
 Some resources:
 \
 [Components and Props](https://reactjs.org/docs/components-and-props.html).
+
+---
+
+> `DAY 4` : February 18, 2019  
+**description :** Solve the [Circle problem](https://codepen.io/benrkia/full/wNQadB) using react Stateful components and react's Lifecycle.
+
+**Thoughts :** in this challege we recreate the elements renedring problem using react's stateful components and react's lifecycle.
+\
+Some resources:
+\
+[Understanding React v16.4+ New Component Lifecycle Methods](https://blog.bitsrc.io/understanding-react-v16-4-new-component-lifecycle-methods-fa7b224efd7d).
+\
+[State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html).
