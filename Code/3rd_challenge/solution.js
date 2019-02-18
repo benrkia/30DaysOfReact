@@ -6,11 +6,14 @@ const items = [
     {title: 'item 5', url: 'https://google.com/'},
 ];
 
-const itemsElements = items.map(item =>
-    <li>
-        {item.title} <a href={item.url}>visit</a>
-    </li>
-);
+const Item = (props) => {
+    const {item} = props;
+    return (
+        <li>
+            {item.title} <a href={item.url}>visit</a>
+        </li>
+    );
+}
 
 const headerProps = {
     className: 'hidden',
@@ -24,7 +27,9 @@ const element = (
     <div>
         <header {...headerProps} className='container'  />
         <ul>
-            {itemsElements}
+            {
+                items.map(item => <Item item={item} /> )
+            }
         </ul>
     </div>
 );

@@ -36,3 +36,16 @@ Some resources:
 Some resources:
 \
 [Components and Props](https://reactjs.org/docs/components-and-props.html).
+
+---
+
+> `DAY 3` : February 17, 2019  
+**description :** Continue with Stateless components, in this challenge we shoud create a simple application using complex stateless components (Nested components) & of course use props in order to exchange data between components [Components and Props](https://codepen.io/benrkia/full/ZwVOex)
+
+**Thoughts :** Use stateless/functional components to build complex application by breaking our application down into nested components, it becomes easier to test and easier to keep track of what functionality goes where.
+\
+Usin props in order to share data between components, props are immutable objects which garantees that each child is responsible of it's state (we can say it's variables) and cannot change his parent's variables.
+\
+Some resources:
+\
+[Components and Props](https://reactjs.org/docs/components-and-props.html).
