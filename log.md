@@ -48,7 +48,7 @@ Usin props in order to share data between components, props are immutable object
 \
 Some resources:
 \
-[Components and Props](https://reactjs.org/docs/components-and-props.html).
+[Components and Props](https://reactjs.org/docs/components-and-props.html).[
 
 ---
 
@@ -62,3 +62,16 @@ Some resources:
 [Understanding React v16.4+ New Component Lifecycle Methods](https://blog.bitsrc.io/understanding-react-v16-4-new-component-lifecycle-methods-fa7b224efd7d).
 \
 [State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html).
+
+---
+
+> `DAY 5` : February 20, 2019  
+**description :** Solve the [World Clock problem](https://codepen.io/benrkia/full/WPWyyY) using react Stateful Components and Lifecycle Hooks.
+
+**Thoughts :** how to use lifecycle hooks in order to rerender a component each time we change the state.
+\
+Some resources:
+\
+[How to become a pro with React setState() in 10 minutes](https://medium.freecodecamp.org/get-pro-with-react-setstate-in-10-minutes-d38251d1c781?fbclid=IwAR1fzkkBNmroqDHCvGDCoabRiwRGSXEbdOOHlUfx50-QWndu4o80SC0wD_U).
+\
+[State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html).)
