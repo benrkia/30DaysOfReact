@@ -1,0 +1,40 @@
+.active {
+    border-radius: 5px 5px 0 0 !important;
+    margin: 0 !important;
+}
+
+.active::before {
+    border-bottom: 5px solid #fff !important;
+    border-top: 5px solid transparent !important;
+    bottom: 10px !important;
+}
+
+.title {
+    position: relative;
+    background: #607D8B;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 0 10px 0;
+    cursor: pointer;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid transparent;
+}
+
+.body {
+    background: #607d8bb0;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    margin: 0 0 5px 0;
+}
