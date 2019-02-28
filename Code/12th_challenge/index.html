@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Controlled Components</title>
+
+    <style>
+        .active {
+            border-radius: 5px 5px 0 0 !important;
+            margin: 0 !important;
+        }
+
+        .active::before {
+            border-bottom: 5px solid #fff !important;
+            border-top: 5px solid transparent !important;
+            bottom: 10px !important;
+        }
+
+        .title {
+            position: relative;
+            background: #607D8B;
+            text-align: center;
+            padding: 5px;
+            border-radius: 5px;
+            margin: 0 0 10px 0;
+            cursor: pointer;
+        }
+
+        .title::before {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            right: 10px;
+            width: 0px;
+            height: 0px;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid #fff;
+            border-bottom: 5px solid transparent;
+        }
+
+        .body {
+            background: #607d8bb0;
+            padding: 10px;
+            border-radius: 0 0 5px 5px;
+            margin: 0 0 5px 0;
+        }
+
+        label {
+        display: inline-block;
+        margin: 5px 0;
+        }
+
+        input[type='text'], textarea {
+            padding: 7px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            display: block;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- this is the DOM node -->
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+    <script type="text/babel" src="solution.js"></script>
+</body>
+</html>
