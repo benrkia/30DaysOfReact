@@ -140,7 +140,7 @@ Some resources:
 ---
 
 > `DAY 10` : February 27, 2019  
-**description :** Discover the [List & Keys challenges](https://codepen.io/benrkia/full/VRLGXj).
+**description :** Solve the [List & Keys challenges](https://codepen.io/benrkia/full/VRLGXj).
 \
 The objective of today's challenge is to learn about conditional rendering in react which is very beneficial. one of the most useful cases of conditional rendering is loading message. in today's challenge, i used CR to toggle the body of each post.
 \
@@ -156,3 +156,23 @@ Some resources:
 [Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html).
 \
 [Lists and Keys](https://reactjs.org/docs/lists-and-keys.html).
+[Create React App](https://github.com/facebook/create-react-app).
+
+---
+
+> `DAY 11` : February 28, 2019  
+**description :** Solve the [Forms, Controlled Components and Lifting State up challenge](https://codepen.io/benrkia/pen/BbobwB).
+\
+Forms are the most useful thing we've ever had. but as you know each form or actually the inputs inside a form has their own state. Also, we've known the importance of states in react.
+\
+Controlled Components are stateful components in which we control our form, this way we're going to combine both form's state and component's state into one state which is controlled by the component.
+\
+`The errors exist in AddPost and App components.`
+
+**Thoughts :** how the deal with forms inside react. also how to state lifting work.
+\
+Some resources:
+\
+[Lifting State Up](https://reactjs.org/docs/lifting-state-up.html).
+\
+[Controlled Components](https://reactjs.org/docs/forms.html).
