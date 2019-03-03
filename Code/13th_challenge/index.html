@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Remote Data</title>
+
+    <style>
+        img {
+            width: 100%;
+        }
+
+        .card {
+            width: 500px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 5px black;
+        }
+
+        .card-head {
+            padding: 2px 5px;
+            border-radius: 10px 10px 0 0;
+            background-color: #ddd;
+            text-align: center;
+        }
+
+        .card-body {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- this is the DOM node -->
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+    <script type="text/babel" src="solution.js"></script>
+</body>
+</html>

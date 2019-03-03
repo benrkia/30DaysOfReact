@@ -18,5 +18,5 @@ Rules of the 30 Days Of React Challenge.
 > [Log](log.md)
 Here sits the progress of each day.
 
-> [Code](code/)
+> [Code](Code/)
 This folder contains all the codes written during this challange.

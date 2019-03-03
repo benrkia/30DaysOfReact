@@ -176,3 +176,25 @@ Some resources:
 [Lifting State Up](https://reactjs.org/docs/lifting-state-up.html).
 \
 [Controlled Components](https://reactjs.org/docs/forms.html).
+
+---
+
+> `DAY 12` : March 03, 2019  
+**description :** [How to deal with Remote Data in React](https://codepen.io/benrkia/pen/YgWqMN).
+\
+Today we'll see how to deal with remote data. actually react is a library for creating spa (single page apps), which are usually client-side rendering. simply, this means the server send a simple html page to the browser with a lot of js script. then the browser handles the dom rendering.
+This spa interacts with a server in order to post or fetch data.
+\
+`For persons who want to learn by doing, here we are 😅`
+\
+In this example, i've made a small app that fetches remote data from an API. this example includes all that we've learned.
+\
+Starting from tomorrow we'll start building apps (basic ~ advanced), This will include some advanced topics like state management, testing....
+
+**Thoughts :** how to work with remote data in react, which is very important as react is library for creating SPA. we'll always have interaction with external resources in order to get/post data.
+\
+Some resources:
+\
+[How to Write a JavaScript Promise](https://medium.freecodecamp.org/how-to-write-a-javascript-promise-4ed8d44292b8).
+\
+[Fetching API Data with React.JS](https://blog.hellojs.org/fetching-api-data-with-react-js-460fe8bbf8f2).
