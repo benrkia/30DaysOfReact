@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.alert {
+    color: #e74c3c;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.btn {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    outline: 0;
+    cursor: pointer;
+    margin: 0 1px;
+}
+
+button.btn > i {
+    color: white;
+}
+
+.btn-add {
+    border: 1px solid #3498db;
+    background-color: #3498dbcc;
+}
+
+.btn-edit {
+    border: 1px solid #95a5a6;
+    background-color: #95a5a6cc;
+}
+
+.btn-delete {
+    border: 1px solid #e74c3c;
+    background-color: #e74c3ccc;
+}
+
+/* Header */
+
+.todo-header {
+    position: relative;
+    height: 200px;
+    margin-bottom: 10px;
+    background-image: url(http://localhost:3000/static/media/bg.3052136d.gif);
+    background-position: center;
+    background-size: contain;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.todo-header-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    background: #673ab76e;
+}
+
+/* Add Task */
+
+.add-task {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.add-task > input {
+    flex: auto;
+    padding: 0 10px;
+    border: 1px solid #3498db;
+    outline: 0;
+}
+
+.add-task > .empty {
+    border-color: #e74c3c !important;
+}
+
+/* Tasks */
+
+.tasks {
+    padding: 10px;
+}
+
+.task {
+    display: grid;
+    grid-template-columns: 5% 95%;
+    border-bottom: 1px solid #34495e;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.task > .completed {
+    justify-self: end;
+}
+
+.task > .task-description {
+    padding: 0 5px;
+    letter-spacing: 1px;
+}
+
+.task > p.completed {
+    text-decoration: line-through;
+}
+
+.task > .control {
+    grid-column: 2;
+    justify-self: right;
+}
+
+/* Custom Checkbox */
+
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 7px;
+    top: 4px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

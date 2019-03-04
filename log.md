@@ -198,3 +198,22 @@ Some resources:
 [How to Write a JavaScript Promise](https://medium.freecodecamp.org/how-to-write-a-javascript-promise-4ed8d44292b8).
 \
 [Fetching API Data with React.JS](https://blog.hellojs.org/fetching-api-data-with-react-js-460fe8bbf8f2).
+
+---
+
+> `DAY 13` : March 04, 2019  
+**description :** The first part of our first application **Todo App**.
+\
+Today we'll start our first application, which is the famous Todo App.
+It'll be divided into 3 parts. in this first part, you should create the UI, and of course, think in react where we have to divide our app into components.
+\
+In the `second part`, we'll add the state to each stateful component and change the useless stateful components into stateless components.
+\
+And in the `last part`, we'll work with remote data.
+This we'll complete our first application in react.
+
+**Thoughts :** how to thinks in react and build the application using components.
+\
+Some resources: `How to divide your application into components 😅`
+\
+[Thinking in React](https://reactjs.org/docs/thinking-in-react.html).
