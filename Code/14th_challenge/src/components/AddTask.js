@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Task from '../classes/Task';
+
 class AddTask extends Component {
 
 	constructor(props){
@@ -7,10 +9,22 @@ class AddTask extends Component {
 
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
+		this.addTask = this.addTask.bind(this);
 
 		this.state = {
 			taskDescription: '',
 			error: false,
+		}
+	}
+
+	componentWillReceiveProps(nextProps) {
+		const {update} = nextProps;
+
+		if(update.active) {
+			this.setState({
+				taskDescription: update.task.description,
+				error: false,
+			});
 		}
 	}
 
@@ -23,12 +37,30 @@ class AddTask extends Component {
 		});
 	}
 
+	addTask(description) {
+		const task = new Task(description);
+
+		this.props.addTask(task);
+	}
+
 	handleSubmit(event) {
 		event.preventDefault();
 
+		const {update} = this.props;
 		const {taskDescription} = this.state;
 
-		console.log(taskDescription);
+		if(!taskDescription) {
+			this.setState({error: true});
+			return;
+		}
+
+		if(update.active) {
+			this.props.updateTask(update.task.id, taskDescription);
+		}else {
+			this.addTask(taskDescription);
+		}
+
+		this.setState({taskDescription: ''});
 	}
 
 	render() {
@@ -50,7 +82,7 @@ class AddTask extends Component {
 					</button>
 				</div>
 				{error &&
-					<div className='alert'>Task description must not be empty</div>
+					<div className='empty-alert'>Task description must not be empty</div>
 				}
 			</form>
 		);

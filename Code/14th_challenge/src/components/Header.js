@@ -1,21 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Header extends Component {
+const Header = () => {
 
-	render() {
-		const date = new Date();
+	const date = new Date();
 
-		return (
-			<header className='todo-header'>
-				<div className='todo-header-wrapper'>
-					<h1>Hola</h1>
-					<p>{
-						date.toDateString()
-					}</p>
-				</div>
-			</header>
-		);
-	}
+	return (
+		<header className='todo-header'>
+			<div className='todo-header-wrapper'>
+				<h1>Hola</h1>
+				<p>{
+					date.toDateString()
+				}</p>
+			</div>
+		</header>
+	);
 }
 
 export default Header;

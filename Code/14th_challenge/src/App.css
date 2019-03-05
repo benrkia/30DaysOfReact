@@ -3,10 +3,29 @@
     padding: 0;
 }
 
-.alert {
+.empty-alert {
     color: #e74c3c;
     font-size: 14px;
     padding: 0 10px;
+}
+
+.alert {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    padding: 10px;
+    margin: 0 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.alert-success {
+    background: #00968880;
+    border: 1px solid #009688;
+    color: #fff;
 }
 
 .btn {
@@ -37,13 +56,22 @@ button.btn > i {
     background-color: #e74c3ccc;
 }
 
+.separator-header {
+    text-align: center;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 0 200px;
+    background: #7d507edd;
+    color: #fff;
+}
+
 /* Header */
 
 .todo-header {
     position: relative;
     height: 200px;
     margin-bottom: 10px;
-    background-image: url(http://localhost:3000/static/media/bg.3052136d.gif);
+    background-image: url(./assets/bg.gif);
     background-position: center;
     background-size: contain;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -99,12 +127,23 @@ button.btn > i {
     justify-self: end;
 }
 
-.task > .task-description {
+.task > .content {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.task > .content > .task-description {
     padding: 0 5px;
     letter-spacing: 1px;
 }
 
-.task > p.completed {
+.task > .content > span {
+    font-size: 12px;
+    padding: 0 5px;
+    color: #f00;
+}
+
+.task > .content > p.completed {
     text-decoration: line-through;
 }
 

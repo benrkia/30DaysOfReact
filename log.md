@@ -217,3 +217,18 @@ This we'll complete our first application in react.
 Some resources: `How to divide your application into components 😅`
 \
 [Thinking in React](https://reactjs.org/docs/thinking-in-react.html).
+
+---
+
+> `DAY 14` : March 05, 2019  
+**description :** The second part of the **Todo** application.
+\
+Today our focus is on state management and making the application works. So an important thing to know is how the `interaction between components` is done inside react and of course the `life cycle hooks`.
+\
+The application of today includes all what we've seen from the beginning of this challenge.
+
+**Thoughts :** The interaction between react components in a real example, and what are the struggles with this approach.
+\
+Some resources: `How to divide your application into components 😅`
+\
+[Thinking in React](https://reactjs.org/docs/thinking-in-react.html).
