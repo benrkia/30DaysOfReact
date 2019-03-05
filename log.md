@@ -225,7 +225,7 @@ Some resources: `How to divide your application into components 😅`
 \
 Today our focus is on state management and making the application works. So an important thing to know is how the `interaction between components` is done inside react and of course the `life cycle hooks`.
 \
-The application of today includes all what we've seen from the beginning of this challenge.
+The application of today includes all that we've seen from the beginning of this challenge.
 
 **Thoughts :** The interaction between react components in a real example, and what are the struggles with this approach.
 \
