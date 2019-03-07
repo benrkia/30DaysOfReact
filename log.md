@@ -232,3 +232,17 @@ The application of today includes all that we've seen from the beginning of this
 Some resources: `How to divide your application into components 😅`
 \
 [Thinking in React](https://reactjs.org/docs/thinking-in-react.html).
+
+---
+
+> `DAY 15` : March 07, 2019  
+**description :** The final part of the **Todo** application.
+\
+Et voilà !
+[Test the final result](https://km30wxx9n7.codesandbox.io)
+\
+Our first React Application is done. you'll notice that few are the changed files during this transfer from local data to remote data And this is one of the benefits of components.
+\
+In this example, i used my own way of structuring code. it's up to you to structure your project the way you like.
+\
+`PS: because i used jsonplaceholder which is a Fake Online REST API, in other words jsonplaceholder just mimic what a REST API actually do and this is why you cannot really save the data inside the server.`

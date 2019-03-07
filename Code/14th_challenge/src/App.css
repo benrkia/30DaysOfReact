@@ -28,6 +28,12 @@
     color: #fff;
 }
 
+.alert-danger {
+    background: #e74c3c;
+    border: 1px solid #e74c3c80;
+    color: #fff;
+}
+
 .btn {
     width: 30px;
     height: 30px;

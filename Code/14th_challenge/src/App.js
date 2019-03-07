@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
+import { taskService } from './services/task.service';
+
 import Header from './components/Header'
 import AddTask from './components/AddTask'
 import Tasks from './components/Tasks'
 
 import './App.css'
-
-import tasks from './data/tasks';
 
 class App extends Component {
 
@@ -14,7 +14,8 @@ class App extends Component {
 		super(props);
 
 		this.state = {
-			tasks,
+			loading: false,
+			tasks: [],
 			update: {
 				active: false,
 				task: null,
@@ -27,33 +28,68 @@ class App extends Component {
 		}
 	}
 
-	addTask = (task) => {
-		const {tasks} = this.state;
-		tasks.push(task);
-		this.setState({tasks});
+	componentDidMount() {
 
-		this.alert('Task has been created successfully', 'success');
+		this.setState({loading: true});
+
+		taskService.getTasks()
+		.then(tasks => {
+			this.setState({tasks, loading: false});
+		})
+		.catch(response => {
+			this.alert(response.error, 'danger');
+		});
+
+	}
+
+	addTask = (task) => {
+
+		const {tasks} = this.state;
+
+		taskService.addTask(task)
+		.then(task => {
+			tasks.push(task);
+			this.setState({tasks});
+
+			this.alert('Task has been created successfully', 'success');
+		})
+		.catch(response => {
+			this.alert(response.error, 'danger');
+		});
 	}
 
 	deleteTask = (id) => {
-		const tasks = this.state.tasks.filter(task => task.id !== id);
-		this.setState({tasks});
 
-		this.alert('Task has been deleted successfully', 'success');
+		taskService.deleteTask(id)
+		.then(() => {
+			const tasks = this.state.tasks.filter(task => task.id !== id);
+			this.setState({tasks});
+
+			this.alert('Task has been deleted successfully', 'success');
+		})
+		.catch(response => {
+			this.alert(response.error, 'danger');
+		});
+
 	}
 
 	updateTask = (id, newDescription) => {
 		const {tasks} = this.state;
-		tasks.forEach(task => {
-			if(task.id === id){
-				task.description = newDescription;
-			}
+
+		const task = tasks.find(task => task.id === id);
+
+		taskService.updateTask(id, {title: newDescription})
+		.then(() => {
+			this.clearUpdate();
+
+			task.description = newDescription;
+			this.setState({tasks});
+
+			this.alert('Task has been updated successfully', 'success');
+		})
+		.catch(response => {
+			this.alert(response.error, 'danger');
 		});
-
-		this.setState({tasks});
-
-		this.alert('Task has been updated successfully', 'success');
-		this.clearUpdate();
 	}
 
 	editTask = (task) => {
@@ -74,18 +110,18 @@ class App extends Component {
 	
 	toggleTask = (id, is_completed) => {
 		const {tasks} = this.state;
-		tasks.forEach(task => {
-			if(task.id === id){
-				task.completed = is_completed;
-			}
-		});
 
+		const task = tasks.find(task => task.id === id);
+		task.completed = is_completed;
 		this.setState({tasks});
+
+		this.alert(`Task has been marked as ${is_completed ? 'completed' : 'uncompleted'} successfully`, 'success');
+
 	}
 
 	render() {
 
-		let {tasks, update, alert} = this.state;
+		let {tasks, loading, update, alert} = this.state;
 		const completedTasks = tasks.filter(task => task.completed);
 		const uncompletedTasks = tasks.filter(task => !task.completed);
 
@@ -99,22 +135,30 @@ class App extends Component {
 					addTask={this.addTask}
 					updateTask={this.updateTask}
 					update={update} />
-				<Tasks	
-					tasks={uncompletedTasks}
-					deleteTask={this.deleteTask}
-					editTask={this.editTask}
-					toggleTask={this.toggleTask} />
-				{completedTasks.length ?
+				{loading ?
+					<h2 style={{padding: '20px',display: 'grid',justifyItems: 'center'}}>
+						Loading ...
+					</h2>
+					:
 					<React.Fragment>
-						<h2 className='separator-header'>Completed Tasks</h2>
 						<Tasks	
-							tasks={completedTasks}
+							tasks={uncompletedTasks}
 							deleteTask={this.deleteTask}
 							editTask={this.editTask}
 							toggleTask={this.toggleTask} />
+						{completedTasks.length ?
+							<React.Fragment>
+								<h2 className='separator-header'>Completed Tasks</h2>
+								<Tasks	
+									tasks={completedTasks}
+									deleteTask={this.deleteTask}
+									editTask={this.editTask}
+									toggleTask={this.toggleTask} />
+							</React.Fragment>
+							:
+							''	
+						}
 					</React.Fragment>
-					:
-					''	
 				}
 			</div>
 		);

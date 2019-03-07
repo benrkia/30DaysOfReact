@@ -2,11 +2,11 @@ let uniqid = require('uniqid')
 
 class Task {
 
-    constructor(description) {
-        this.id = uniqid();
+    constructor(description, completed = false, id = uniqid()) {
+        this.id = id;
         this.description = description;
         this.created_at = new Date();
-        this.completed = false;
+        this.completed = completed;
     }
 }
 
