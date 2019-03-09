@@ -246,3 +246,21 @@ Our first React Application is done. you'll notice that few are the changed file
 In this example, i used my own way of structuring code. it's up to you to structure your project the way you like.
 \
 `PS: because i used jsonplaceholder which is a Fake Online REST API, in other words jsonplaceholder just mimic what a REST API actually do and this is why you cannot really save the data inside the server.`
+
+---
+
+> `DAY 16` : March 09, 2019  
+**description :** A simple article Application with **Routing**.
+\
+As you all know, each application has links and we can navigate through its pages.
+But actually, when using the anchor element we're no longer using a SPA. which is the objective behind using react.
+\
+To fix that we have React router which is collections of components (react's model) that compose with our app in order to make navigation works pretty well.
+\
+Try to make this simple [App](https://62vz4n1w13.codesandbox.io/).
+\
+`In the next challenges, we'll focus on state management and then we'll create a full application including all what we've learned with authentication ofc.`
+\
+[The Hitchhiker’s Guide To React Router v4: Grok React Router in 20 minutes](https://medium.freecodecamp.org/hitchhikers-guide-to-react-router-v4-a957c6a5aa18).
+\
+[Getting started with React Router](https://codeburst.io/getting-started-with-react-router-5c978f70df91).
