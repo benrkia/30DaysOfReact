@@ -264,3 +264,36 @@ Try to make this simple [App](https://62vz4n1w13.codesandbox.io/).
 [The Hitchhiker’s Guide To React Router v4: Grok React Router in 20 minutes](https://medium.freecodecamp.org/hitchhikers-guide-to-react-router-v4-a957c6a5aa18).
 \
 [Getting started with React Router](https://codeburst.io/getting-started-with-react-router-5c978f70df91).
+
+---
+
+> `DAY 17` : March 10, 2019  
+**description :** **State Management** with react.
+\
+As we've seen the preferred method of working with React components is through passing data from one parent component to its children components. But as the application gets bigger and more complex it's very hard to keep track of the data flow.
+\
+Flux is a pattern for data management inside react application. The idea behind this approach is :
+
+    1. We have a single-source of truth which is the Store.
+    2. It can only be updated by triggering Actions.
+    3. The Actions are responsible for calling the Dispatcher.
+    4. The Store subscribes for the Dispatcher.
+
+![Flux Diagram](./img/flux-diagram.png)
+\
+There are a lot of implementations of **Flux**, but the most used implementation by React community is **`Redux`**.
+Redux is an implementation of the Flux pattern with a slight difference. **The 3 major principles of Redux** :
+
+    √ Updates are made with pure functions also called reducers (replaces the dispatcher)
+    √ State/Store is a read-only property
+    √ State/Store is the single source of truth (There is only one Store in a Redux app).
+
+Redux imports other feature to the pattern which is the middleware. We'll see it in further challenges.
+\
+To understand the principles of Redux check [this](https://jsbin.com/giwunat/24/edit?js,console,output).
+\
+Try to make this [simple app](https://jsfiddle.net/inancgumus/e3067seu/) using vanilla javascript and redux.
+\
+[Rethinking Web App Development at Facebook](https://www.youtube.com/watch?list=PLb0IAmt7-GS188xDYE-u1ShQmFFGbrk0v&v=nYkdrAPrdcw).
+\
+[Redux Basic Tutorial](https://redux.js.org/basics/basic-tutorial).
