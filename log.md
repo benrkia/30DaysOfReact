@@ -297,3 +297,19 @@ Try to make this [simple app](https://jsfiddle.net/inancgumus/e3067seu/) using v
 [Rethinking Web App Development at Facebook](https://www.youtube.com/watch?list=PLb0IAmt7-GS188xDYE-u1ShQmFFGbrk0v&v=nYkdrAPrdcw).
 \
 [Redux Basic Tutorial](https://redux.js.org/basics/basic-tutorial).
+
+---
+
+> `DAY 18` : March 15, 2019  
+**description :** integrate redux with react **React Redux**.
+\
+As we have seen Redux helps us manage our state in a better way.
+Here i created a small [Implementation of Redux](https://codepen.io/benrkia/pen/pYWRME). By reading this code you should be able to understand how action, reducer and store works.
+\
+The Objective of today's challenge is to create a small `Users/Posts Management Application`. the application is a recap of what we've seen in `Routing` and `State Management`. You should have one global state **(store)** that contains an array of users and another array of posts. Any user of the application should be able to delete either posts or users. This way you're going to use all that we've learned in redux + what cames with react-redux.
+\
+[Users/Posts management App](https://jv4v9w6vr9.codesandbox.io/).
+\
+To understand the principles of Redux check [This Tutorial Script](https://jsbin.com/giwunat/24/edit?js,console,output).
+\
+[React Redux Basic Tutorial](https://react-redux.js.org/introduction/basic-tutorial).
