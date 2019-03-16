@@ -8,7 +8,7 @@ class MyComponent extends React.Component {
   }
   
   addName = () => {
-    // this function is correct
+    // Do not change in this function
     const name = document.querySelector("#input").value;
     if(name.length === 0){
       alert("insert a valid name");
