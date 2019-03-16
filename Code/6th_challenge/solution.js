@@ -45,9 +45,7 @@ class Clock extends React.Component {
     }
 
     render() {
-
         const {date, timeZone} = this.state;
-
         const city = timeZone.split('/')[1];
 
         return (
