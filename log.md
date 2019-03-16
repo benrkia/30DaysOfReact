@@ -5,7 +5,7 @@
 
 **Thoughts :** what is jsx and we need to use it inside our react applications
 \
-Some resources:
+**Resources :**
 \
 [Introducing JSX](https://reactjs.org/docs/introducing-jsx.html).
 \
@@ -20,7 +20,7 @@ Some resources:
 
 **Thoughts :** learn about react's elements rendering and how react virtual dom works
 \
-Some resources:
+**Resources :**
 \
 [The difference between Virtual DOM and DOM](https://reactkungfu.com/2015/10/the-difference-between-virtual-dom-and-dom/).
 \
@@ -33,7 +33,7 @@ Some resources:
 
 **Thoughts :** what is react's stateless/function component, why we need to use react functional components and what is the difference between react's Element & Component.
 \
-Some resources:
+**Resources :**
 \
 [Components and Props](https://reactjs.org/docs/components-and-props.html).
 
@@ -46,7 +46,7 @@ Some resources:
 \
 Usin props in order to share data between components, props are immutable objects which garantees that each child is responsible of it's state (we can say it's variables) and cannot change his parent's variables.
 \
-Some resources:
+**Resources :**
 \
 [Components and Props](https://reactjs.org/docs/components-and-props.html).
 
@@ -57,7 +57,7 @@ Some resources:
 
 **Thoughts :** in this challege we recreate the elements renedring problem using react's stateful components and react's lifecycle.
 \
-Some resources:
+**Resources :**
 \
 [Understanding React v16.4+ New Component Lifecycle Methods](https://blog.bitsrc.io/understanding-react-v16-4-new-component-lifecycle-methods-fa7b224efd7d).
 \
@@ -70,7 +70,7 @@ Some resources:
 
 **Thoughts :** how to use lifecycle hooks in order to rerender a component each time we change the state.
 \
-Some resources:
+**Resources :**
 \
 [How to become a pro with React setState() in 10 minutes](https://medium.freecodecamp.org/get-pro-with-react-setstate-in-10-minutes-d38251d1c781).
 \
@@ -97,7 +97,7 @@ Some resources:
 
 **Thoughts :** how to handle events inside react and how to access components methods inside the dom elements.
 \
-Some resources:
+**Resources :**
 \
 [Handling Events](https://reactjs.org/docs/handling-events.html).
 \
@@ -114,7 +114,7 @@ This code presents a simple interaction with stateful and stateless components v
 
 **Thoughts :** Learn about type checking in react which is very important as our app grows it gets difficult to manage the state, proprs and their types.  
 \
-Some resources:
+**Resources :**
 \
 [Type checking With PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html).
 \
@@ -131,7 +131,7 @@ we won't have a real challenge today, because we are going to move from using re
 
 **Thoughts :** React offers several different methods for creating components. Today we'll talk about the final method of creating components, the function stateless pure component.
 \
-Some resources:
+**Resources :**
 \
 [Stateless Component vs Pure Component](https://medium.com/groww-engineering/stateless-component-vs-pure-component-d2af88a1200b).
 \
@@ -151,7 +151,7 @@ to see the problem with this pen. click on a post to see it's content. then clic
 
 **Thoughts :** The importance of the key attribute and how to use conditional rendering.
 \
-Some resources:
+**Resources :**
 \
 [Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html).
 \
@@ -171,7 +171,7 @@ Controlled Components are stateful components in which we control our form, this
 
 **Thoughts :** how the deal with forms inside react. also how to state lifting work.
 \
-Some resources:
+**Resources :**
 \
 [Lifting State Up](https://reactjs.org/docs/lifting-state-up.html).
 \
@@ -193,7 +193,7 @@ Starting from tomorrow we'll start building apps (basic ~ advanced), This will i
 
 **Thoughts :** how to work with remote data in react, which is very important as react is library for creating SPA. we'll always have interaction with external resources in order to get/post data.
 \
-Some resources:
+**Resources :**
 \
 [How to Write a JavaScript Promise](https://medium.freecodecamp.org/how-to-write-a-javascript-promise-4ed8d44292b8).
 \
@@ -216,6 +216,8 @@ This we'll complete our first application in react.
 \
 Some resources: `How to divide your application into components 😅`
 \
+**Resources :**
+\
 [Thinking in React](https://reactjs.org/docs/thinking-in-react.html).
 
 ---
@@ -230,6 +232,8 @@ The application of today includes all that we've seen from the beginning of this
 **Thoughts :** The interaction between react components in a real example, and what are the struggles with this approach.
 \
 Some resources: `How to divide your application into components 😅`
+\
+**Resources :**
 \
 [Thinking in React](https://reactjs.org/docs/thinking-in-react.html).
 
@@ -260,6 +264,8 @@ To fix that we have React router which is collections of components (react's mod
 Try to make this simple [App](https://62vz4n1w13.codesandbox.io/).
 \
 `In the next challenges, we'll focus on state management and then we'll create a full application including all what we've learned with authentication ofc.`
+\
+**Resources :**
 \
 [The Hitchhiker’s Guide To React Router v4: Grok React Router in 20 minutes](https://medium.freecodecamp.org/hitchhikers-guide-to-react-router-v4-a957c6a5aa18).
 \
@@ -294,6 +300,8 @@ To understand the principles of Redux check [this](https://jsbin.com/giwunat/24/
 \
 Try to make this [simple app](https://jsfiddle.net/inancgumus/e3067seu/) using vanilla javascript and redux.
 \
+**Resources :**
+\
 [Rethinking Web App Development at Facebook](https://www.youtube.com/watch?list=PLb0IAmt7-GS188xDYE-u1ShQmFFGbrk0v&v=nYkdrAPrdcw).
 \
 [Redux Basic Tutorial](https://redux.js.org/basics/basic-tutorial).
@@ -307,6 +315,8 @@ As we have seen Redux helps us manage our state in a better way.
 Here i created a small [Implementation of Redux](https://codepen.io/benrkia/pen/pYWRME). By reading this code you should be able to understand how action, reducer and store works.
 \
 The Objective of today's challenge is to create a small `Users/Posts Management Application`. the application is a recap of what we've seen in `Routing` and `State Management`. You should have one global state **(store)** that contains an array of users and another array of posts. Any user of the application should be able to delete either posts or users. This way you're going to use all that we've learned in redux + what cames with react-redux.
+\
+**Resources :**
 \
 [Users/Posts management App](https://jv4v9w6vr9.codesandbox.io/).
 \
@@ -330,6 +340,9 @@ For Redux, middleware provides a third-party extension point between dispatching
 While middleware can be used for a variety of things, including asynchronous API calls, it's really important that you understand where it comes from.
 
 Today's challenge is to use [andthetimeis Api](https://andthetimeis.com/) to fetch the current datetime each time a user click on update. this will recap the whole redux principles alongside with middlewares in redux.
+[You can see it here](https://xrxmpyz5v4.codesandbox.io/). do not forget to check the console.
+\
+**Resources :**
 \
 [Creating custom Middleware in React/Redux.](https://medium.com/netscape/creating-custom-middleware-in-react-redux-961570459ecb).
 \
