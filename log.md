@@ -351,3 +351,32 @@ Today's challenge is to use [andthetimeis Api](https://andthetimeis.com/) to fet
 [Middleware](https://redux.js.org/advanced/middleware).
 \
 [applyMiddleware(...middleware)](https://redux.js.org/api/applymiddleware).
+
+---
+
+> `DAY 20` : March 25, 2019  
+**description :** Hacker News Clone Using React.
+\
+My apologies for this gap, i coudn't post during the past week because of some engagements
+\
+Today will be the first part of our final application. [Hacker News](https://en.wikipedia.org/wiki/Hacker_News) Clone.
+\
+In this serie of challenges your task is to follow along with me in everything that has relation with file structuring & design patterns...
+\
+Otherwise i prefer to see you doing it your way. In other words, i want to see your style of coding after all that we have learned.
+\
+This application will summarize all the main components of React. And i believe at the end you'll be able to start working on real project using react readily.
+\
+[Here](https://codesandbox.io/s/y268pqpyr9) you can find the file structure that i follow. It's a very recommended structure to follow, but it's up to you.
+\
+**File Structure**
+
+1. Components: this folder will contain the main components of our app.
+2. Services: this folder will contain service components that will deal with external data...
+3. Store: this folder will contain redux files.
+4. Styles: this folder will contain our style components. notice that i added `styled-components` dependency in order to make styles using javascript.
+5. Utils: this will contain helper scripts.
+\
+**Resources :**
+\
+[Styled Components](https://www.styled-components.com/docs/basics#motivation).
