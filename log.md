@@ -354,7 +354,7 @@ Today's challenge is to use [andthetimeis Api](https://andthetimeis.com/) to fet
 
 ---
 
-> `DAY 20` : March 25, 2019  
+> `DAY 21` : March 25, 2019  
 **description :** Hacker News Clone Using React.
 \
 My apologies for this gap, i coudn't post during the past week because of some engagements
@@ -368,8 +368,8 @@ Otherwise i prefer to see you doing it your way. In other words, i want to see y
 This application will summarize all the main components of React. And i believe at the end you'll be able to start working on real project using react readily.
 \
 [Here](https://codesandbox.io/s/y268pqpyr9) you can find the file structure that i follow. It's a very recommended structure to follow, but it's up to you.
-\
-**File Structure**
+
+**File Structure :**
 
 1. Components: this folder will contain the main components of our app.
 2. Services: this folder will contain service components that will deal with external data...
@@ -380,3 +380,30 @@ This application will summarize all the main components of React. And i believe 
 **Resources :**
 \
 [Styled Components](https://www.styled-components.com/docs/basics#motivation).
+
+---
+
+> `DAY 22` : March 26, 2019  
+**description :** Hacker News Clone Using React.
+\
+Today will be the 2nd part of our final application. [Hacker News](https://en.wikipedia.org/wiki/Hacker_News) Clone.
+\
+Today, were going to add redux to our application.
+So our focus will be on the `store` folder.
+we have the **index** file which contain the store of our application (the single source of truth).
+\
+The middleware file will contain our middleware, which a composition of all the middlewares we need to complete our application. **Notice:**, i used react-logger which a logging tool to chrome console, this will help us follow the changes of our store.
+\
+Also, redux thunk which i'll cover later.
+\
+And the root reducer of course.
+\
+Also, the app folder which contain the app actions & reducer. this will help us follow the separation of concerns pattern and groupe our functionalities by features.
+\
+[Here](https://codesandbox.io/s/130r9ojxm3) you can find the structure of our project after adding redux. Try to add redux to the project yourself, this will help understand everything.
+
+**Resources :**
+\
+[Logger for Redux](https://github.com/LogRocket/redux-logger).
+\
+[A quick introduction to pipe() and compose() in JavaScript](https://medium.freecodecamp.org/pipe-and-compose-in-javascript-5b04004ac937).
