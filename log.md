@@ -354,7 +354,7 @@ Today's challenge is to use [andthetimeis Api](https://andthetimeis.com/) to fet
 
 ---
 
-> `DAY 21` : March 25, 2019  
+> `DAY 20` : March 25, 2019  
 **description :** Hacker News Clone Using React.
 \
 My apologies for this gap, i coudn't post during the past week because of some engagements
@@ -383,7 +383,7 @@ This application will summarize all the main components of React. And i believe 
 
 ---
 
-> `DAY 22` : March 26, 2019  
+> `DAY 21` : March 26, 2019  
 **description :** Hacker News Clone Using React.
 \
 Today will be the 2nd part of our final application. [Hacker News](https://en.wikipedia.org/wiki/Hacker_News) Clone.
