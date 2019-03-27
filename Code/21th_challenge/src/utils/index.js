@@ -1,0 +1,1 @@
+export const LINK_REL = "noopener noreferrer nofollow";

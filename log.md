@@ -407,3 +407,30 @@ Also, the app folder which contain the app actions & reducer. this will help us 
 [Logger for Redux](https://github.com/LogRocket/redux-logger).
 \
 [A quick introduction to pipe() and compose() in JavaScript](https://medium.freecodecamp.org/pipe-and-compose-in-javascript-5b04004ac937).
+
+---
+
+> `DAY 22` : March 27, 2019  
+**description :** Hacker News Clone Using React.
+\
+Today will be the 3rd part of our final application. [Hacker News](https://en.wikipedia.org/wiki/Hacker_News) Clone.
+\
+Today, were going to build the main UI of the application using `styled-components` dependency.
+\
+Also, our application will have 3 principles routes (`react-router-dom` dependency):
+
+1. Home Route.
+2. News Route (this route will be secure, you can access it only if you're authenticated).
+3. Login Route.
+
+There might be some additional routes in the future, but the 3 listed above are enough for the moment.
+\
+[Here](https://045jlxk4ww.codesandbox.io/) is the result after building the UI.
+\
+You can check the code from [here](https://codesandbox.io/s/045jlxk4ww). But as usual, try to do it your self.
+
+**Resources :**
+\
+[React Router](https://reacttraining.com/react-router/web/guides/quick-start).
+\
+[Styled Components](https://www.styled-components.com/docs/basics#motivation).
