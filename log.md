@@ -434,3 +434,28 @@ You can check the code from [here](https://codesandbox.io/s/045jlxk4ww). But as 
 [React Router](https://reacttraining.com/react-router/web/guides/quick-start).
 \
 [Styled Components](https://www.styled-components.com/docs/basics#motivation).
+
+---
+
+> `DAY 23` : March 30, 2019
+**description :** Hacker News Clone Using React.
+\
+Today will be the 4th part of our final application. [Hacker News](https://en.wikipedia.org/wiki/Hacker_News) Clone.
+\
+Today, we're going to build the login UI. Also, we'll implement the authentication system using the Okta Authentication API.
+\
+Also, we're going to use Okta SecureRoute in order to secure some routes from the unauthenticated users. In our application, the news route will be secure so that only the authenticated users can access it.
+\
+[Here](https://7z556r4zlj.codesandbox.io/) is our application so far.
+\
+`username:` testuser@hnc.com
+\
+`password:` User0000
+\
+You can check the code from [here](https://codesandbox.io/s/7z556r4zlj).
+
+**Resources :**
+\
+[React Router](https://reacttraining.com/react-router/web/guides/quick-start).
+\
+[Okta React Overview](https://developer.okta.com/code/react/okta_react/).
