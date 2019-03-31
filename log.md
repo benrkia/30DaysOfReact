@@ -107,7 +107,7 @@ Usin props in order to share data between components, props are immutable object
 
 > `DAY 8` : February 25, 2019  
 **description :** Solve the [Packaging challenge](https://codepen.io/benrkia/pen/YgKwav) using react's type prop types package.
-\
+
 This code presents a simple interaction with stateful and stateless components via props. but as you can test (tape a text instead of a number) this won't be always as expected so type checking is something very important. also, it contains some inline styling in react.
 \
 `we have a few days before start project challenges, in which you'll be asked to make some small ~ medium applications via all the stuff we've learned so far.`
@@ -124,8 +124,8 @@ This code presents a simple interaction with stateful and stateless components v
 
 > `DAY 9` : February 26, 2019  
 **description :** Discover the [Pure Components](https://codepen.io/benrkia/pen/moyqPb).
-\
-we won't have a real challenge today, because we are going to move from using react CDN to create-react-app which is very important to develop and deploy our applications.
+
+We won't have a real challenge today, because we are going to move from using react CDN to create-react-app which is very important to develop and deploy our applications.
 \
 `the example below shows the utility of Pure Components which is faster than Stateless Components in some cases. so consider using both stateless & pure components whenever you can.`
 
@@ -141,7 +141,7 @@ we won't have a real challenge today, because we are going to move from using re
 
 > `DAY 10` : February 27, 2019  
 **description :** Solve the [List & Keys challenges](https://codepen.io/benrkia/full/VRLGXj).
-\
+
 The objective of today's challenge is to learn about conditional rendering in react which is very beneficial. one of the most useful cases of conditional rendering is loading message. in today's challenge, i used CR to toggle the body of each post.
 \
 The main focus is on lists & the importance of key attribute.
@@ -162,7 +162,7 @@ to see the problem with this pen. click on a post to see it's content. then clic
 
 > `DAY 11` : February 28, 2019  
 **description :** Solve the [Forms, Controlled Components and Lifting State up challenge](https://codepen.io/benrkia/pen/BbobwB).
-\
+
 Forms are the most useful thing we've ever had. but as you know each form or actually the inputs inside a form has their own state. Also, we've known the importance of states in react.
 \
 Controlled Components are stateful components in which we control our form, this way we're going to combine both form's state and component's state into one state which is controlled by the component.
@@ -181,7 +181,7 @@ Controlled Components are stateful components in which we control our form, this
 
 > `DAY 12` : March 03, 2019  
 **description :** [How to deal with Remote Data in React](https://codepen.io/benrkia/pen/YgWqMN).
-\
+
 Today we'll see how to deal with remote data. actually react is a library for creating spa (single page apps), which are usually client-side rendering. simply, this means the server send a simple html page to the browser with a lot of js script. then the browser handles the dom rendering.
 This spa interacts with a server in order to post or fetch data.
 \
@@ -203,7 +203,7 @@ Starting from tomorrow we'll start building apps (basic ~ advanced), This will i
 
 > `DAY 13` : March 04, 2019  
 **description :** The first part of our first application **Todo App**.
-\
+
 Today we'll start our first application, which is the famous Todo App.
 It'll be divided into 3 parts. in this first part, you should create the UI, and of course, think in react where we have to divide our app into components.
 \
@@ -224,7 +224,7 @@ Some resources: `How to divide your application into components 😅`
 
 > `DAY 14` : March 05, 2019  
 **description :** The second part of the **Todo** application.
-\
+
 Today our focus is on state management and making the application works. So an important thing to know is how the `interaction between components` is done inside react and of course the `life cycle hooks`.
 \
 The application of today includes all that we've seen from the beginning of this challenge.
@@ -241,7 +241,7 @@ Some resources: `How to divide your application into components 😅`
 
 > `DAY 15` : March 07, 2019  
 **description :** The final part of the **Todo** application.
-\
+
 Et voilà !
 [Test the final result](https://km30wxx9n7.codesandbox.io)
 \
@@ -255,7 +255,7 @@ In this example, i used my own way of structuring code. it's up to you to struct
 
 > `DAY 16` : March 09, 2019  
 **description :** A simple article Application with **Routing**.
-\
+
 As you all know, each application has links and we can navigate through its pages.
 But actually, when using the anchor element we're no longer using a SPA. which is the objective behind using react.
 \
@@ -275,7 +275,7 @@ Try to make this simple [App](https://62vz4n1w13.codesandbox.io/).
 
 > `DAY 17` : March 10, 2019  
 **description :** **State Management** with react.
-\
+
 As we've seen the preferred method of working with React components is through passing data from one parent component to its children components. But as the application gets bigger and more complex it's very hard to keep track of the data flow.
 \
 Flux is a pattern for data management inside react application. The idea behind this approach is :
@@ -310,7 +310,7 @@ Try to make this [simple app](https://jsfiddle.net/inancgumus/e3067seu/) using v
 
 > `DAY 18` : March 15, 2019  
 **description :** integrate redux with react **React Redux**.
-\
+
 As we have seen Redux helps us manage our state in a better way.
 Here i created a small [Implementation of Redux](https://codepen.io/benrkia/pen/pYWRME). By reading this code you should be able to understand how action, reducer and store works.
 \
@@ -328,7 +328,7 @@ To understand the principles of Redux check [This Tutorial Script](https://jsbin
 
 > `DAY 19` : March 16, 2019  
 **description :** unlock redux power with **Redux middleware**.
-\
+
 Yesterday we've applied all that we've learned in redux in a small react application. in which we've worked through reducers, updating action creators, and connecting Redux to React components.
 
     Middleware is the software that connects network-based requests generated by a client to the back-end data the client is requesting. It is a general term for software that serves to "glue together" separate, often complex and already existing programs.
@@ -356,7 +356,7 @@ Today's challenge is to use [andthetimeis Api](https://andthetimeis.com/) to fet
 
 > `DAY 20` : March 25, 2019  
 **description :** Hacker News Clone Using React.
-\
+
 My apologies for this gap, i coudn't post during the past week because of some engagements
 \
 Today will be the first part of our final application. [Hacker News](https://en.wikipedia.org/wiki/Hacker_News) Clone.
@@ -385,7 +385,7 @@ This application will summarize all the main components of React. And i believe 
 
 > `DAY 21` : March 26, 2019  
 **description :** Hacker News Clone Using React.
-\
+
 Today will be the 2nd part of our final application. [Hacker News](https://en.wikipedia.org/wiki/Hacker_News) Clone.
 \
 Today, were going to add redux to our application.
@@ -412,7 +412,7 @@ Also, the app folder which contain the app actions & reducer. this will help us 
 
 > `DAY 22` : March 27, 2019  
 **description :** Hacker News Clone Using React.
-\
+
 Today will be the 3rd part of our final application. [Hacker News](https://en.wikipedia.org/wiki/Hacker_News) Clone.
 \
 Today, were going to build the main UI of the application using `styled-components` dependency.
@@ -439,7 +439,7 @@ You can check the code from [here](https://codesandbox.io/s/045jlxk4ww). But as 
 
 > `DAY 23` : March 30, 2019
 **description :** Hacker News Clone Using React.
-\
+
 Today will be the 4th part of our final application. [Hacker News](https://en.wikipedia.org/wiki/Hacker_News) Clone.
 \
 Today, we're going to build the login UI. Also, we'll implement the authentication system using the Okta Authentication API.
@@ -459,3 +459,29 @@ You can check the code from [here](https://codesandbox.io/s/7z556r4zlj).
 [React Router](https://reacttraining.com/react-router/web/guides/quick-start).
 \
 [Okta React Overview](https://developer.okta.com/code/react/okta_react/).
+
+---
+
+> `DAY 24` : March 31, 2019
+**description :** Hacker News Clone Using React.
+
+Today will be the 5th part of our final application. [Hacker News](https://en.wikipedia.org/wiki/Hacker_News) Clone.
+\
+Today, we're going to implement our services. to do so we're using the [Hacker News API](https://github.com/HackerNews/API).
+\
+First, we'll create our Api.js file, this will be our wrapper of the Axios.js.
+You can customize it the way you want, in my case & in case of success i only return response.data.
+\
+Also, we have the hackerNewsApi.js, we can think of it as i child of the Api.js (class that inherits our main API service).
+\
+It'll contain 3 functions: `getStoryIds`, `getStoryById` and `getStoryByPage`. there is more than 500 news so we cannot show them all at once. And of course, it's a great opportunity to see how we can do pagination using React.
+\
+[Here](https://7kl533mw51.codesandbox.io/) is our application so far. Please check the console to see the test of our API call, which i've done in the [index](Code/23th_challenge/src/index.js) file.
+\
+You can check the code from [here](https://codesandbox.io/s/7kl533mw51).
+
+**Resources :**
+\
+[Fetch vs. Axios.js for making http requests](https://medium.com/@thejasonfile/fetch-vs-axios-js-for-making-http-requests-2b261cdd3af5).
+\
+[Getting Started With Axios](https://medium.com/codingthesmartway-com-blog/getting-started-with-axios-166cb0035237).
