@@ -485,3 +485,42 @@ You can check the code from [here](https://codesandbox.io/s/7kl533mw51).
 [Fetch vs. Axios.js for making http requests](https://medium.com/@thejasonfile/fetch-vs-axios-js-for-making-http-requests-2b261cdd3af5).
 \
 [Getting Started With Axios](https://medium.com/codingthesmartway-com-blog/getting-started-with-axios-166cb0035237).
+
+---
+
+> `DAY 25` : April 01, 2019
+**description :** Hacker News Clone Using React.
+
+Today will be the 6th part of our final application. [Hacker News](https://en.wikipedia.org/wiki/Hacker_News) Clone.
+\
+Today, we're going to see the utility of redux-thunk in our application.
+As we've seen when we studied redux. The actions are defined as plain objects, but there are some cases we need an action to be a function so that we can execute the buddy of this function each time we dispatch the action (e.g a function action that dispatch multiple actions at once).
+\
+First, we should create the story folder. This folder will contain the actions & reducer of the story.
+We have 2 actions, the first one is fetch the Ids of the top stories then, each time we success the call we should dispatch the fetch stories action. The fetch stories action should call the fetchStoriesByPage service & each time it success we should increment the current page by one. we'll use this variable in the pagination.
+\
+The structure of the story state is as follow :
+
+```javascript
+{
+    storyIds: [],
+    stories: [],
+    page: 0,
+    isFetching: false,
+    error: '',
+}
+```
+
+Now you know the structure of the story state and what to do, try yourself to create the story actions & reducer, it'll help you a lot understanding how redux works.
+\
+Try to install [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) in order to debug the state changes in our application.
+\
+[Here](https://7zol3vorw0.codesandbox.io/) is our application so far. Please check the Redux DevTools or the console to see the state changes produced by the action i've dispatched in the [index](Code/24th_challenge/src/index.js) file.
+\
+You can check the code from [here](https://codesandbox.io/s/7zol3vorw0).
+
+**Resources :**
+\
+[Understanding the Redux-Thunk Source Code](https://medium.com/@User3141592/understanding-the-redux-thunk-source-code-b3f8b930faf6).
+\
+[Redux-Thunk code source](https://github.com/reduxjs/redux-thunk/blob/master/src/index.js).
