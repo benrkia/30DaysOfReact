@@ -534,7 +534,7 @@ Today will be the 7th part of our final application. [Hacker News](https://en.wi
 \
 Today, we're going to use react-redux in order to connect our react components with our store.
 \
-Actually it is the easist part easiest in this set of challenges, we'll use the power of connect function to pass our story state & fetch actions to the News component. Then, we'll adjust our code to use the fetched data from the API.
+Actually, it is the easiest part in this set of challenges, we'll use the power of connect function to pass our story state & fetch actions to the News component. Then, we'll adjust our code to use the fetched data from the API.
 \
 [Here](https://326pp75oom.codesandbox.io/) is our application so far. Use these credentials to log in (**required to see the news pages**).
 \
