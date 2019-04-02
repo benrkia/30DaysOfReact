@@ -524,3 +524,22 @@ You can check the code from [here](https://codesandbox.io/s/7zol3vorw0).
 [Understanding the Redux-Thunk Source Code](https://medium.com/@User3141592/understanding-the-redux-thunk-source-code-b3f8b930faf6).
 \
 [Redux-Thunk code source](https://github.com/reduxjs/redux-thunk/blob/master/src/index.js).
+
+---
+
+> `DAY 26` : April 02, 2019
+**description :** Hacker News Clone Using React.
+
+Today will be the 7th part of our final application. [Hacker News](https://en.wikipedia.org/wiki/Hacker_News) Clone.
+\
+Today, we're going to use react-redux in order to connect our react components with our store.
+\
+Actually it is the easist part easiest in this set of challenges, we'll use the power of connect function to pass our story state & fetch actions to the News component. Then, we'll adjust our code to use the fetched data from the API.
+\
+[Here](https://326pp75oom.codesandbox.io/) is our application so far. Use these credentials to log in (**required to see the news pages**).
+\
+`username:` testuser@hnc.com
+\
+`password:` User0000
+\
+You can check the code from [here](https://codesandbox.io/s/326pp75oom).
