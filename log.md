@@ -543,3 +543,26 @@ Actually, it is the easiest part in this set of challenges, we'll use the power 
 `password:` User0000
 \
 You can check the code from [here](https://codesandbox.io/s/326pp75oom).
+
+---
+
+> `DAY 27` : April 03, 2019
+**description :** Hacker News Clone Using React.
+
+Et Voila!, the last part of our application.
+\
+Today, we're going to implement infinite scroll using the React Infinite Scroller component. This way we're going to fetch the next slice of data each time the user scrolls down.
+\
+Also, we'll use Reselect, which is selector library for redux that will help us continue fetching data while we have it available.
+\
+[Here](https://21y4xo8vwj.codesandbox.io/) you can find the final application. Use these credentials to log in (**required to see the news pages**).
+\
+`username:` testuser@hnc.com
+\
+`password:` User0000
+
+**Resources :**
+\
+[React Infinite Scroller](https://www.npmjs.com/package/react-infinite-scroller).
+\
+[Reselect](https://github.com/reduxjs/reselect).
