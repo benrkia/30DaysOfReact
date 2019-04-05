@@ -566,3 +566,36 @@ Also, we'll use Reselect, which is selector library for redux that will help us 
 [React Infinite Scroller](https://www.npmjs.com/package/react-infinite-scroller).
 \
 [Reselect](https://github.com/reduxjs/reselect).
+
+---
+
+> `DAY 28` : April 05, 2019
+**description :** React Render Props.
+
+It is time for some advanced concepts in React.
+\
+Actually, when working on medium to large projects we usually need some reusable components.
+\
+In this [challenge](./Code/27th_challenge/challenge.js) you'll notice that i have :
+
+    1. An Amount component that renders its value with the possibility to increment & decrement this amount;
+    2. Also, the Amount component renders other currency components such as (MAD, EGP...);
+    3. The problem with this is that the Amount component has to know about the currency components. Every time you want to change the rendered output you would have to touch the Amount component;
+
+The objective of this challenge is to make the Amount component reusable. So that we can have something like :
+
+```html
+    <Amount>
+        <MAD amount={amount} />
+        <EGP amount={amount} />
+        ...
+    </Amount>
+```
+
+We can achieve that by a simple state-lifting to the App components. but the goal of this challenge is to make the Amount component an independent reusable component.
+
+Check the challenge on [Codepen](https://codepen.io/benrkia/pen/MRejYG).
+
+**Resources :**
+\
+[Render Props](https://reactjs.org/docs/render-props.html).
