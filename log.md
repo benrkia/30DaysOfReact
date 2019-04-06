@@ -599,3 +599,25 @@ Check the challenge on [Codepen](https://codepen.io/benrkia/pen/MRejYG).
 **Resources :**
 \
 [Render Props](https://reactjs.org/docs/render-props.html).
+
+---
+
+> `DAY 29` : April 06, 2019
+**description :** React Hooks.
+
+Tadaaa :trollface:, day 29 and this is the last challenge in this series of challenges.
+
+Today, our challenge will be on React's new feature **React Hooks**.
+\
+In this [challenge](https://codepen.io/benrkia/pen/RORLXe) we have a Storage component which is a render prop component. each time we inject this component into another component we give it the possibility to store, fetch & remove its state from the localStorage.
+\
+To test that, we have a Users component that tries to load the users from localStorage whenever it's mounted, if there is no users in the localStorage it calls the fetchData & store the result in the localStorage.
+
+The objective of this challenge is to create a `useStorage Hook` that will allow us achieve the same result as our **Storage** render prop component.
+
+**Resources :**
+\
+[Hooks at a Glance](https://reactjs.org/docs/hooks-overview.html).
+
+![Thanks for participating](./img/thanks.jpg)
+See you in further challenges :smiley:.
